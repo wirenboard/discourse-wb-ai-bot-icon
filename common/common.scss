@@ -207,3 +207,10 @@ html.on-auth-page .ai-bot-center-wrapper,
 html.on-auth-page .ai-bot-side-anon {
   display: none !important;
 }
+
+// ─── Bot replies: hide the model name ───
+// discourse-ai 2026.10 prints the model's display name after the agent name on
+// every bot reply. Our model names are internal and mean nothing to clients.
+.agent-flair__model {
+  display: none;
+}
